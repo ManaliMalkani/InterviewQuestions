@@ -1,0 +1,91 @@
+2. Focus on Security & Access Control Testing
+a. Authentication and Authorization
+Test different user roles across subsidiaries (e.g., Organizer, Viewer, Recorder, Admin).
+
+Validate SSO, MFA, and identity federation if being used across orgs.
+
+b. Data Segregation
+Users from Subsidiary A should not see content from Subsidiary B unless explicitly allowed.
+
+Validate tenant isolation and data boundaries at the API and UI levels.
+
+c. Access Scenarios
+Test who can:
+
+Join a meeting
+
+Access recordings
+
+View chat or transcripts
+
+Share files
+
+Include negative test cases (e.g., unauthorized access attempts).
+
+🗃️ 3. Test Confidential Content Handling
+Are meeting recordings encrypted?
+
+Can chat logs or attachments be leaked?
+
+Test data at rest and data in transit encryption (e.g., TLS, E2EE).
+
+Verify audit logs are generated and secure.
+
+🔄 4. Test Cross-Subsidiary Use Cases
+Can a parent org schedule a meeting with multiple subsidiaries?
+
+Are calendar invites, reminders, and access links behaving correctly across domains?
+
+Are compliance/legal disclaimers or regional rules (e.g., GDPR, HIPAA) enforced differently per entity?
+
+📱 5. Test Across Devices and Networks
+Test secure meeting access from:
+
+Web
+
+Mobile
+
+VPN vs open network
+
+Simulate poor networks, dropped connections, screen sharing, etc.
+
+🧪 6. Functional Testing
+Schedule, join, cancel, and record meetings.
+
+Test chat, file sharing, breakout rooms, screen sharing.
+
+Verify role-based UI elements.
+
+⚙️ 7. Integration and API Testing
+If the app integrates with:
+
+Calendars (e.g., Outlook, Google)
+
+Identity providers (e.g., Okta, Azure AD)
+
+CRM or document storage (e.g., SharePoint)
+
+Ensure secure, correct behavior across all integration points.
+
+📊 8. Compliance and Audit-Ready Testing
+Confirm logging, alerts, and incident response hooks work.
+
+Verify data retention policies, deletion workflows, and legal hold features.
+
+Work with Legal/Compliance to define test cases for regulated use.
+
+🧩 9. Usability + Human Error Testing
+Test accidental data sharing.
+
+Validate that the UI helps prevent misconfiguration (e.g., "Accidentally shared with all subsidiaries").
+
+📝 Example Test Cases
+User from Subsidiary B tries to access a confidential recording from Subsidiary A — expect 403 Forbidden.
+
+Parent company admin schedules a meeting and restricts recording to internal users — verify no external access is allowed.
+
+A revoked user tries to use an old meeting link — expect rejection.
+
+🧠 Wrap-Up
+"When expanding an app like this to subsidiaries, my focus as a QA tester would be to test for secure access, data boundaries, compliance, and interoperability — ensuring we maintain confidentiality and trust across all entities using the system."
+
