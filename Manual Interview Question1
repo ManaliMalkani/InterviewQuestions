@@ -1,0 +1,63 @@
+Question 1
+Subsidiary A uploads confidential documents.
+Subsidiary B is in a contract with A, so some discussion overlaps.
+Subsidiary A sends a chat message asking for general information about Subsidiary B — not requesting access to confidential documents, but asking contextual info like:
+"Hey, who is the signatory on this contract?" or
+"Can you confirm the policy number associated with this deal?"
+What kind of chat interaction is allowed or appropriate in this scenario?
+
+Answer
+In this situation, the chat interaction is generally okay as long as:
+
+No confidential or sensitive information is being shared.
+
+The people chatting are both authorized to talk about the deal.
+
+The information being asked (like signatory name or policy number) is not restricted or private under company policy.
+
+Since Subsidiary A and B are already in a contract together, asking general questions like "Who signed the contract?" or "What’s the policy number?" is usually fine, if it's just for context and not for accessing protected documents.
+
+However, to be safe:
+
+If there’s any doubt about whether the info is sensitive, it’s better to use formal channels like an internal request system or ask Legal/Compliance.
+
+All employees should follow the company's data sharing and communication policies.
+
+As a QA Lead, I would also make sure these types of cases are considered in our test scenarios and ensure teams are trained on what’s okay to share and what’s not.
+
+In short:
+👉 The chat is appropriate if it’s general info, not sensitive, and shared by the right people.
+👉 If unsure, use formal processes or check with compliance.
+
+🔍 Follow-up Scenario-Based Questions
+What if Subsidiary A accidentally receives a document that includes confidential data from Subsidiary B?
+
+How should they handle it? What is the QA or tester’s role in preventing such leaks?
+
+How would you test that only the right users can see or request certain information across subsidiaries?
+
+(This checks their knowledge of authorization, role-based access control, and boundary testing.)
+
+How do you test chat or collaboration tools for compliance and security?
+
+For example, if your application has built-in messaging — how would you test that messages don’t leak sensitive info?
+
+What kind of negative test cases would you write for this situation?
+
+E.g., What happens if an unauthorized user tries to request or view contract data?
+
+How would you report a situation where someone shares more than they should in a chat?
+
+Looking for soft skills and understanding of escalation protocols.
+
+If you see a gray area where you’re unsure if something is sensitive — what’s your approach?
+
+🧠 Knowledge & Best Practice Questions
+What’s the difference between confidential and contextual information? Can you give examples of each?
+
+What are some QA test strategies to make sure data segregation between subsidiaries is enforced?
+
+Have you worked with any compliance frameworks like GDPR, SOC2, or HIPAA? How did they impact your testing?
+
+How do you collaborate with Legal, Security, or Privacy teams during test planning or bug triaging?
+
