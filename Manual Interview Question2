@@ -1,3 +1,4 @@
+Question--How to approach testing an application designed for high-profile confidential meetings, initially for a parent organization and now being extended to subsidiaries.
 2. Focus on Security & Access Control Testing
 a. Authentication and Authorization
 Test different user roles across subsidiaries (e.g., Organizer, Viewer, Recorder, Admin).
